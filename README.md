@@ -14,9 +14,9 @@ Prerequisites:
 
 Install python req on Ubuntu/Unix:
 
-	sudo apt-get install python3.5-dev libmysqlclient-dev
+		sudo apt-get install python3.5-dev libmysqlclient-dev
 
-	sudo apt-get install python3-numpy
+		sudo apt-get install python3-numpy
 
 Requirements:
 1) Create a virtual environment within the parent directory
