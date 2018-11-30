@@ -6,11 +6,11 @@ Steps to run:
 
 Prerequisites:
 
-	1) Python 3 installed
+1) Python 3 installed
 
-	2) Port 80 and 8080 open to 0.0.0.0 inbound traffic on EC2
+2) Port 80 and 8080 open to 0.0.0.0 inbound traffic on EC2
 
-	3) Virtual Environment installed
+3) Virtual Environment installed
 
 Install python req on Ubuntu/Unix:
 
