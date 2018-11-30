@@ -33,13 +33,13 @@ Requirements:
 
 4) Update the setuptools
 	
-	pip install --upgrade setuptools
+		pip install --upgrade setuptools
 
 5) Install Package dependencies
 	
-	pip install -r requirements.txt
+		pip install -r requirements.txt
 
 6) Finally, run the website on the server through your network IP on port 80
 	
-	python manage.py runserver -h 0.0.0.0 -p 80
+		python manage.py runserver -h 0.0.0.0 -p 80
 
