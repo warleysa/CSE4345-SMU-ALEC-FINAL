@@ -21,15 +21,15 @@ Install python req on Ubuntu/Unix:
 Requirements:
 1) Create a virtual environment within the parent directory
 	
-	python3 -m venv env
+		python3 -m venv env
 
 2) Activate the Virtual Environment
 	
-	source env/bin/activate
+		source env/bin/activate
 
 3) Make sure pip is updated
 	
-	pip install --upgrade pip
+		pip install --upgrade pip
 
 4) Update the setuptools
 	
