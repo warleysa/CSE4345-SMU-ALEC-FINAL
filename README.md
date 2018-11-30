@@ -2,9 +2,9 @@
 
 This repo contains the code to be deployed on a AWS EC2 Instance to be run with the database included.
 
-####Steps to run: 
+#### Steps to run: 
 
-###Prerequisites:
+### Prerequisites:
 
 #1) Python 3 installed
 
