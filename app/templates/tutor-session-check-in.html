@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{ category }} alert-dismissible fade show fixed-top col-6 mx-auto mt-2" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Alert!</strong> {{ message }}
+    </div>
+    <script type="text/javascript">
+        setTimeout(function(){
+            $(".alert").slideUp(800)
+        },5000); 
+    </script>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body">
+                <h3>Signed in as {{ user.full_name }}</h3>
+                <form action="/alec-check-out/{{ user.id }}" method="post" novalidate>
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <div class="form-group">        
+                      <button type="submit" id="submit" class="btn btn-danger mt-4 w-100">Leaving the ALEC? Check out!</button>
+                    </div>
+                </form>
+                {% for class_info in tutor_class_info %}
+                <!-- class_info.id is the ID of the tutor_classes table -->
+                    <a id={{ class_info.id }} class="btn btn-success my-4" role="button" href="/class-check-in/{{ class_info.id }}">Check In - {{ class_info.class_info }}</a> 
+                {% endfor %}
+                <a class="btn btn-primary my-4" role="button" href="/profile">Don't see your class?</a> 
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
