@@ -19,27 +19,27 @@ Install python req on Ubuntu/Unix:
 	sudo apt-get install python3-numpy
 
 Requirements:
-	1) Create a virtual environment within the parent directory
+1) Create a virtual environment within the parent directory
 	
-			python3 -m venv env
+	python3 -m venv env
 
-	2) Activate the Virtual Environment
+2) Activate the Virtual Environment
 	
-			source env/bin/activate
+	source env/bin/activate
 
-	3) Make sure pip is updated
+3) Make sure pip is updated
 	
-			pip install --upgrade pip
+	pip install --upgrade pip
 
-	4) Update the setuptools
+4) Update the setuptools
 	
-			pip install --upgrade setuptools
+	pip install --upgrade setuptools
 
-	5) Install Package dependencies
+5) Install Package dependencies
 	
-			pip install -r requirements.txt
+	pip install -r requirements.txt
 
-	6) Finally, run the website on the server through your network IP on port 80
+6) Finally, run the website on the server through your network IP on port 80
 	
-			python manage.py runserver -h 0.0.0.0 -p 80
+	python manage.py runserver -h 0.0.0.0 -p 80
 
