@@ -13,11 +13,11 @@ Prerequisites:
 3) Virtual Environment installed
 
 Install python req on Ubuntu/Unix:
-1)
+1) Python & SQL Client
 
 		sudo apt-get install python3.5-dev libmysqlclient-dev
 
-2)
+2) Numpy
 
 		sudo apt-get install python3-numpy
 
